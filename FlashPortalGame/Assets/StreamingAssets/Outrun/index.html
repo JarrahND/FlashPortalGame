@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>HTML5 Outrun</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="http://funhtml5games.com/outrun/common.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="container">
+
+    <div id="hud">
+      <span id="speed" class="hud"><span id="speed_value" class="value"></span></span>
+      <span id="current_lap_time" class="hud">Lap: <span id="current_lap_time_value" class="value">0:00:00</span></span>
+      <span id="last_lap_time" class="hud">Time: <span id="last_lap_time_value" class="value">90</span></span>
+      <span id="fast_lap_time" class="hud">Stage: <span id="fast_lap_time_value" class="value">1</span></span>
+    </div>
+    <canvas id="canvas"></canvas>
+
+	<div id="dpad" ontouchstart="ce();">
+		<div style="position:absolute;width:80px;height:80px;background-size:100% 100%;background-image:url(http://funhtml5games.com/outrun/images/left_arrow.png);left:0px;bottom:0px;" ontouchstart="move_start('left');ce(e);" ontouchend="move_stop('left');">
+		</div>
+		<div style="position:absolute;width:80px;height:80px;background-size:100% 100%;background-image:url(http://funhtml5games.com/outrun/images/right_arrow.png);left:80px;bottom:0px;" ontouchstart="move_start('right');ce(e);" ontouchend="move_stop('right');"></div>
+		<div style="position:absolute;width:80px;height:80px;background-size:100% 100%;background-image:url(http://funhtml5games.com/outrun/images/up_arrow.png);left:560px;bottom:80px;" ontouchstart="move_start('up');ce(e);" ontouchend="move_stop('up');"></div>
+		<div style="position:absolute;width:80px;height:80px;background-size:100% 100%;background-image:url(http://funhtml5games.com/outrun/images/down_arrow.png);left:560px;bottom:0px;" ontouchstart="move_start('down');ce(e);" ontouchend="move_stop('down');"></div>
+	</div>
+
+	<div id="footer_div">
+	</div>
+
+	<div id="frontpage" onclick="start_game();">
+		<img src="http://funhtml5games.com/outrun/images/outrun_logo.png">
+		<br>
+		TIME TRIAL
+		<br><br>
+		<div id="loading_message">LOADING...</div>
+	</div>
+
+	<div id="game_over_div" onclick="start_game();">
+		<img src="http://funhtml5games.com/outrun/images/game_over.png">
+		<br><br>
+		TOUCH SCREEN OR PRESS SPACE<br>TO PLAY AGAIN
+	</div>
+
+  <a href="http://funhtml5games.com/" target="_BLANK"><span id="moreGames">More Games</span></a>
+
+  <span id="mute"></span>
+
+</div>
+
+<audio id='music'><source src="http://www.funhtml5games.com/outrun/music/music2.mp3"></audio>
+
+<script src="http://funhtml5games.com/outrun/main-min.js"></script>
+<script src="http://funhtml5games.com/ga.js"></script>
+
+</body>
+</html>

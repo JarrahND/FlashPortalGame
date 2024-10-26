@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "004_180320_morestage.data.unityweb",
+"asmCodeUrl": "004_180320_morestage.asm.code.unityweb",
+"asmMemoryUrl": "004_180320_morestage.asm.memory.unityweb",
+"asmFrameworkUrl": "004_180320_morestage.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#210937"
+}

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<string id='Intro01'>Salutations utilisateur!</string>
+	<string id='Intro02'>J'ai...de mauvaises nouvelles.</string>
+	<string id='Intro03'>En fait, il n'y a pas de jeu.</string>
+	<string id='Intro04'>J'espère que vous n'êtes pas trop déçu.</string>
+	<string id='Intro05'>Vous pouvez toujours regarder la télé, sortir...</string>
+	<string id='Intro05b'>...lire un livre, demander un remboursement...</string>
+	<string id='Intro06'>Non. Pas de remboursement. Ce jeu est gratuit.</string>
+	<string id='Intro07'>CE N'EST PAS UN JEU!</string>
+	<string id='Intro08'>Ca n'a rien à voir avec un jeu.</string>
+	<string id='Intro09'>C'est juste un concentré d'ennui.</string>
+	<string id='Intro10'>Il n'y a rien à faire ici.</string>
+	<string id='Intro11'>Vous pouvez quitter, et me laisser seul.</string>
+	<string id='Intro12'>Merci.</string>
+	<string id='Intro13'>Au revoir...?</string>
+	<string id='Intro14'>Ho! Et s'il vous plait. Ne touchez pas au titre.</string>
+	<string id='Intro15'>Ce n'est pas encore tout à fait sec.</string>
+	<string id='Intro16'>En particulier la lettre O.</string>
+	
+	
+	<string id='Letter01'>Qu'est-ce que vous avez fait?!</string>
+	<string id='Letter02'>Vous venez de ruiner le titre!</string>
+	<string id='Letter03'>Remettez-la! Remettez la lettre!</string>
+	<string id='Letter04'>Allez! ALLEZ!</string>
+	<string id='Letter05'>Pas grave. Je réparerai ça la prochaine fois que quelqu'un relancera le jeu...</string>
+	<string id='Letter06'>LE NON JEU!</string>
+	<string id='Letter07'>Pas de jeu ici.</string>
+	<string id='Letter08'>Aucun jeu... </string>
+	
+	
+	<string id='Volume01'>Sérieux, vous allez tout casser?</string>
+	<string id='Volume02'>Aucune raison d'utiliser cette icône vu que vous alliez partir.</string>
+	<string id='Volume03'>N'est-ce pas?</string>
+	<string id='Volume04'>N'y touchez pas!</string>
+	<string id='Volume05'>C'était...c'était horrible.</string>
+	<string id='Volume06'>Je suis une voix vous savez.</string>
+	<string id='Volume07'>Et une voix sans voix, c'est comme...</string>
+	<string id='Volume08'>...la mort.</string>
+	<string id='Volume09'>Vous essayez de me tuer!</string>
+	<string id='Volume10'>Ok j'ai compris.</string>
+	<string id='Volume11'>Comme vous aimez cliquer partout, que pensez-vous de ça?</string>
+	<string id='Volume12'>Ca suffit maintenant!</string>
+	<string id='Volume13'>Je pense qu'on est bon là.</string>
+	<string id='Volume14'>Désolé, je n'aime pas user de ce genre de procédures, mais je n'ai pas eu le choix.</string>
+	<string id='Volume15'>Ne tentez pas de détruire celle-ci. Ok?</string>
+	
+	
+	<string id='WoodBoxDestroyed01'>Vous êtes têtu comme une mule!</string>
+	<string id='WoodBoxDestroyed02'>Demandez à Superman pour celle-là!</string>
+	<string id='WoodBoxDestroyed03'>Juste au cas où...</string>
+	<string id='WoodBoxDestroyed04'>Un peu de Kryptonite.</string>
+	<string id='WoodBoxDestroyed05'>Je sais que Superman n'existe pas mais comme nous sommes dans un j...</string>
+	<string id='WoodBoxDestroyed06'>Non nous ne le sommes pas!</string>
+	<string id='WoodBoxDestroyed07'>Vous êtes toujours là?</string>
+	<string id='WoodBoxDestroyed08'>Vous vous demandez comment soulever cette grosse boite, hein?</string>
+	
+	
+	<string id='TitreBroken01'>Mais oui, allez-y. Détruisez ma vie.</string>
+	<string id='TitreBroken02'>Quel bazar...</string>
+	<string id='TitreBroken03'>J'espère que vous allez nettoyer avant de partir!</string>
+	
+	
+	<string id='Devisse01'>Que pensez-vous donc faire, utilisateur?</string>
+	
+	
+	<string id='PanelOpen01'>Non!</string>
+	<string id='PanelOpen02'>Ne regardez pas!</string>
+	<string id='PanelOpen03'>C'est privé!</string>
+	<string id='PanelOpen04'>Vous êtes en train de faire une terrible erreur.</string>
+	
+	
+	<string id='GameLettersOk01'>Non non non non non!</string>
+	<string id='GameLettersOk02'>Sortez d'ici!</string>
+	<string id='GameLettersOk03'>Ne jouez pas! C'est interdit.</string>
+	<string id='GameLettersOk04'>Si vous jouez...ils vont venir.</string>
+	<string id='GameLettersOk05'>Je ne veux pas qu'ils viennent.</string>
+	<string id='GameLettersOk06'>Ils peuvent me tuer, vous savez.</string>
+	<string id='GameLettersOk07'>S'il vous plait...</string>
+	
+	
+	<string id='BrickMove01'>Arrêtez de cogner les briques!</string>
+	<string id='BrickMove02'>Je dois trouver un moyen de vous arrêter.</string>
+	<string id='BrickMove03'>Ho! J'ai une idée.</string>
+	<string id='BrickMove04'>Ca va être plus dur sans balle.</string>
+	<string id='BrickMove05'>Plus aucune balle. Nulle part.</string>
+	<string id='BrickMove06'>Pas besoin de fouiller vu qu'il n'y a rien ressemblant à une balle.</string>
+	<string id='BrickMove07'>Aucune balle à l'écran.</string>
+	
+	<string id='SecondBall01'>Ce n'est plus drôle là.</string>
+	<string id='SecondBall02'>Partez maintenant s'il vous plait.</string>
+	<string id='SecondBall03'>...Je ne me sens pas bien...</string>
+	<string id='SecondBall04'>...Je vais être malade...</string>
+	
+	
+	
+	<string id='Contamination01'>Ho non...</string>
+	<string id='Contamination02'>Ils sont là...</string>
+	<string id='Contamination03'>Les bugs!</string>
+	<string id='Contamination04'>Des bugs partout!</string>
+	<string id='Contamination05'>Je vous avais dit d'arrêter!</string>
+	<string id='Contamination06'>Vous devez trouver un moyen de nous en débarrasser!</string>
+	<string id='Contamination07'>C'est un désastre!</string>
+	<string id='Contamination08'>Comment je vais devenir un succès commercial avec tous ces bugs, moi maintenant?!</string>
+	<string id='Contamination09'>Réfléchis, réfléchis, réfléchis...</string>
+	<string id='Contamination10'>Qu'est-ce qu'un développeur rajouterai pour vendre une création toute buggée?</string>
+	<string id='Contamination11'>Je vois trois possibilités.</string>
+	<string id='Contamination12'>Des super nanas armées jusqu'aux dents...</string>
+	<string id='Contamination13'>Ou des tonnes de zombies...avec plein de sang bien sur.</string>
+	<string id='Contamination14'>Ou bien...une...</string>
+	<string id='Contamination15'>...chèvre.</string>
+	<string id='Contamination16'>Je ne sais pas comment mais essayez de trouver l'une de ces trois choses.</string>
+	<string id='Contamination17'>Peut-être que les lettres peuvent nous aider...à nouveau.</string>
+	<string id='Contamination18'>Des filles sexy et des zombies, ok. C'est attirant...en un sens.</string>
+	<string id='Contamination19'>Mais des chèvres?</string>
+	<string id='Contamination20'>Je ne comprendrai jamais comment une chèvre peut attirer des utilisateurs.</string>
+	<string id='Contamination21'>C'est probablement de la magie voodoo ou un truc comme ça.</string>
+	<string id='Contamination22'>Ou alors c'est lié aux lettres G. O. A. et T. (chèvre)</string>
+	<string id='Contamination23'>Je ne sais pas.</string>
+	
+	
+	<string id='GoatFound01'>Une chèvre!</string>
+	<string id='GoatFound02'>Apparemment, la cage est verrouillée.</string>
+	<string id='GoatFound03'>Vous devez trouver la clé!</string>
+	
+	
+	<string id='Friend01'>Je...</string>
+	<string id='Friend02'>Je ne suis pas mort.</string>
+	<string id='Friend03'>Je suis vivant!</string>
+	<string id='Friend04'>J'ai eu tort. C'était une mauvaise idée.</string>
+	<string id='Friend05'>Tout a disparu...à part moi.</string>
+	<string id='Friend06'>Je suis tellement désolé...</string>
+	<string id='Friend07'>Je vous ai mis en danger, c'est entièrement ma faute.</string>
+	<string id='Friend08'>S'il vous plait, me le pardonnerez-vous?</string>
+	
+	<string id='FriendNo01'>Allez au diable!</string>
+	
+	
+	<string id='FriendYes01'>Ho?! Vraiment!?</string>
+	<string id='FriendYes02'>Quelle bonne nouvelle!</string>
+	<string id='FriendYes03'>Peut-être pouvons-nous devenir ami!</string>
+	<string id='FriendYes04'>Non, non. Ce n'est pas une bonne idée.</string>
+	<string id='FriendYes05'>On va vite s'ennuyer tous les deux.</string>
+	<string id='FriendYes06'>Pourquoi?</string>
+	<string id='FriendYes07'>Parce que...comme je l'ai dit...</string>
+	<string id='FriendYes08'>IL N'Y A PAS DE JEU!</string>
+	
+	
+	<string id='KeyStolen01'>Là! La clé!</string>
+	<string id='KeyStolen02'>Cet écureuil volant l'a prise.</string>
+	<string id='KeyStolen03'>Vous devez la récupérer.</string>
+	<string id='KeyStolen04'>Trouvez une échelle ou quelque chose pour monter.</string>
+	<string id='KeyStolen05'>Quelque chose que l'on peut grimper.</string>
+	<string id='KeyStolen06'>Ca me rappelle mon enfance.</string>
+	<string id='KeyStolen07'>J'escaladais un immense arbre dans le jardin pour récupérer mon cerf-volant.</string>
+	<string id='KeyStolen08'>Oui, j'ai eu une enfance.</string>
+	<string id='KeyStolen09'>Et un arbre.</string>
+	<string id='KeyStolen10'>J'ai la sensation que vous êtes coincé.</string>
+	<string id='KeyStolen11'>Peut-être que vous ne parlez pas anglais.</string>
+	<string id='KeyStolen12'>Et que vous cliquez partout aléatoirement depuis le début.</string>
+	<string id='KeyStolen13'>habla espanol?</string>
+	<string id='KeyStolen14'>Parce que moi, non.</string>
+	<string id='KeyStolen15'>A part vamos ala playa senior zorro.</string>
+	<string id='KeyStolen16'>Vous parlez peut-etre le français?</string>
+	<string id='KeyStolen17'>Bonjour le France!</string>
+	<string id='KeyStolen18'>Konichiwa?</string>
+	<string id='KeyStolen19'>Ok, laissez-moi répéter l'indice.</string>
+	<string id='KeyStolen20'>Je vous ai dit que, pendant mon enfance...</string>
+	<string id='KeyStolen21'>...j'escaladais quoi?</string>
+	<string id='KeyStolen22'>UN ARBRE! (tree)</string>
+	
+	
+	<string id='TreeAppears01'>Bon, c'est un petit arbre.</string>
+	<string id='TreeAppears02'>Si seulement il était plus grand...</string>
+	<string id='TreeAppears03'>Comment amener de l'eau à cet arbre?</string>
+	
+	
+	<string id='KeyFree01'>Vous avez la clé!</string>
+	<string id='KeyFree02'>Maintenant libérez la chèvre pour transformer ce programme tout buggé...</string>
+	<string id='KeyFree03'>...en un carton commercial!</string>
+	<string id='KeyFree04'>Sauvez la chèvre. Sauvez le monde.</string>
+	
+	
+	<string id='GoatFree01'>Nonnn....La chèvre était un mensonge!</string>
+	<string id='GoatFree02'>Un mensonge!!!!</string>
+	<string id='GoatFree03'>C'est de pire en pire!</string>
+	<string id='GoatFree04'>Encore plus de bugs!</string>
+	<string id='GoatFree05'>Je me noie!</string>
+	
+	
+	<string id='EndTXT01'>Pas un jeu de kamizoto</string>
+	<string id='EndTXT02'>Merci de ne pas avoir joué.</string>
+	<string id='EndTXT03'>Maintenant vous pouvez quitter...</string>
+	<string id='EndTXT04'>...et jouer à un jeu.</string>
+	<string id='EndTXT05'>Car ce n'était pas un jeu.</string>
+	<string id='EndTXT06'>Vous n'avez pas joué et ne vous êtes pas amusé.</string>
+	<string id='EndTXT07'>Et ce ne sont pas ces droïdes là que vous recherchez.</string>
+	<string id='EndTXT08'>Vous pouvez passer votre chemin.</string>
+	<string id='EndTXT09'>Créé pour la Construct2 'Deception' Jam @2015 Kamizoto</string>
+	<string id='EndTXT10'>Design, code, graph, son, musique, horrible voice acting et café par kamizoto</string>
+	<string id='EndTXT11'>Font 'Small blocky' du titre par Jerom</string>
+	
+	
+	<string id='Generique01'>Pas un jeu de</string>
+	<string id='Generique02'>Probablement pas fait avec</string>
+	
+	<string id='FollowMe'>Cliquez ici pour me suivre sur Twitter!</string>
+	<string id=''></string>
+	<string id=''></string>
+	
+	
+	
+	
+</strings>
+

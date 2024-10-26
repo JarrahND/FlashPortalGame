@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Our Galaxy</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+</head>
+<body>
+    <div id="unity-container" class="unity-desktop">
+        <div id="unity-build-title">Our Galaxy</div>
+        <div id="unity-homelink"><a href="https://otherwise.com" style="text-decoration:none; color:#0085FF">Otherwise Home</a></div>
+        <canvas id="unity-canvas" width=460 height=380></canvas>
+        <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+            </div>
+        </div>
+        <div id="unity-warning"></div>
+        <div id="unity-footer">
+            <div style="display:flex;">
+                <div id="size-options-container"
+                     style="flex-grow:1; text-align:center; line-height:38px; font-family:arial;">
+                    <label for="size-options">Change application size:</label>
+                    <select id="size-options"
+                            name="size-options">
+                        <option value="780x520">780x520</option>
+                        <option value="1120x740"
+                                selected="selected">
+                            1120x740
+                        </option>
+                        <option value="1340x880">1340x880</option>
+                        <option value="1420x900">1420x900</option>
+                        <option value="1660x1100">1660x1100</option>
+                        <option value="1900x1260">1900x1260</option>
+                    </select>
+                </div>
+                <div id="unity-fullscreen-button"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var warningBanner = document.querySelector("#unity-warning");
+
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
+      function unityShowBanner(msg, type) {
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+          setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+        updateBannerVisibility();
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/OurGalaxy_Web.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/OurGalaxy_Web.data",
+        frameworkUrl: buildUrl + "/OurGalaxy_Web.framework.js",
+        codeUrl: buildUrl + "/OurGalaxy_Web.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Otherwise",
+        productName: "Our Galaxy",
+        productVersion: "2.1",
+        showBanner: unityShowBanner,
+      };
+
+      // By default Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        container.className = "unity-mobile";
+
+        // To lower canvas resolution on mobile devices to gain some
+        // performance, uncomment the following line:
+        // config.devicePixelRatio = 1;
+
+        canvas.style.width = window.innerWidth + 'px';
+        canvas.style.height = window.innerHeight + 'px';
+
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
+      } else {
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+
+        canvas.style.width = "460px";
+        canvas.style.height = "380px";
+      }
+
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+          fullscreenButton.onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script>
+    <script>
+        var sizeCookieName = "OGSize";
+        var sizeSelect = document.querySelector("#size-options");
+        var canvas = document.querySelector("#unity-canvas");
+
+        var getCookie = (name) => {
+            var regex = new RegExp(`(?:(?:^|.*;\\s*)${name}\\s*\\=\\s*([^;]*).*$)|^.*$`);
+            return document.cookie.replace(regex, "$1");
+        };
+
+        var setCanvasSize = (value) => {
+            // Extract the dimensions from the provided string.
+            // (Must be in [width]x[height] format.)
+            var dimensions = value.split("x");
+            var width = dimensions[0] + "px";
+            var height = dimensions[1] + "px";
+
+            // Update the canvas size.
+            canvas.style.width = width;
+            canvas.style.height = height;
+        };
+
+        // Hook into the dropdown's change event.
+        sizeSelect.addEventListener("change", (e) => {
+            var value = e.target.value;
+            // Update the canvas size.
+            setCanvasSize(value);
+            // Store new dimensions in cookie.
+            document.cookie = sizeCookieName + "=" + value;
+        });
+
+        // Check if a canvas size has been previously saved.
+        (() => {
+            var sizeCookie = getCookie(sizeCookieName);
+            if (sizeCookie.length > 0) {
+                // Update the canvas size.
+                setCanvasSize(sizeCookie);
+                // Select corresponding option from the dropdown.
+                sizeSelect.value = sizeCookie;
+            }
+        })();
+    
+    </script>
+    
+    <!-- Default Statcounter code for Otherwise Site
+    http://www.otherwise.com -->
+    <script type="text/javascript">
+        var sc_project=278291; 
+        var sc_invisible=1; 
+        var sc_security=""; 
+    </script>
+    <script type="text/javascript"
+            src="https://www.statcounter.com/counter/counter.js"
+            async>
+    </script>
+    <noscript>
+        <div class="statcounter">
+            <a title="hit counter" 
+               href="https://statcounter.com/" 
+               target="_blank">
+                <img class="statcounter" src="https://c.statcounter.com/278291/0//1/" alt="hit counter">
+            </a>
+        </div>
+    </noscript>
+    <!-- End of Statcounter Code -->
+
+</body>
+</html>
